@@ -1,0 +1,21 @@
+Compilação:
+javac IdeiaImpl.java 
+javac IdeaBrokerServerTCP.java
+javac IdeaBrokerClientTCP.java
+
+
+rmiregistry & (porta default)
+rmiregistry 6000 &
+
+
+Correr:
+
+java -cp . IdeiaImpl <ip de rede> 
+
+java -cp . IdeaBrokerServerTCP <Server Backup > <IP RMI>
+
+java -cp . IdeaBrokerClienteTCP < Server Primário > <Server Secundário >
+
+Autores:
+Bruno Miguel Oliveira Rolo (2010131200)
+João Artur Ventura Valério Nobre (2010131516)
